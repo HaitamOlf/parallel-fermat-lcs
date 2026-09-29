@@ -1,0 +1,34 @@
+# Compiled binaries
+Project RSA/rsa_seq
+Project RSA/fermat_seq
+Project RSA/fermat_mpi
+Project RSA/fermat_upc
+Project RSA/fermat_cuda
+Project LCS/lcs_seq
+Project LCS/lcs_mpi
+Project LCS/lcs_upc
+Project LCS/lcs_cuda
+
+# Compilation artifacts
+*.o
+*.obj
+*.exe
+
+# UPC translator intermediate files
+*.gen.c
+*.trans.c
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python (bench helpers)
+__pycache__/
+*.pyc
+
+# WSL-generated attributes on Windows
+:Zone.Identifier

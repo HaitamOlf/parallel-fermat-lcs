@@ -1,0 +1,150 @@
+=== date ===
+2026-09-02T00:45:56+01:00
+
+=== uname -a ===
+Linux Lenovo 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+=== /etc/os-release ===
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+=== lscpu ===
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
+Vendor ID:                            GenuineIntel
+Model name:                           13th Gen Intel(R) Core(TM) i7-13620H
+CPU family:                           6
+Model:                                186
+Thread(s) per core:                   2
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             2
+BogoMIPS:                             5836.80
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize flush_l1d arch_capabilities
+Virtualization:                       VT-x
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            384 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             10 MiB (8 instances)
+L3 cache:                             24 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-15
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Mitigation; Clear Register File
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+=== free -h ===
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi       571Mi        10Gi       3.8Mi       182Mi        10Gi
+Swap:          3.0Gi          0B       3.0Gi
+
+=== gcc --version ===
+gcc (Ubuntu 10.5.0-4ubuntu2.1) 10.5.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+=== mpicc --version ===
+gcc -I/usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -L/usr/lib/x86_64-linux-gnu/openmpi/lib -lmpi
+gcc (Ubuntu 10.5.0-4ubuntu2.1) 10.5.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+=== mpirun --version ===
+mpirun (Open MPI) 4.1.6
+
+Report bugs to http://www.open-mpi.org/community/help/
+
+=== upcc --version ===
+This is upcc (the Berkeley Unified Parallel C compiler), v. 2022.10.0
+----------------------+---------------------------------------------------------
+ UPC Runtime          | v. 2022.10.0, built on Sep  1 2026 at 01:40:13
+----------------------+---------------------------------------------------------
+ UPC-to-C translator  | v. 2.28.4, built on Sep  1 2026 at 01:14:45
+                      | host Lenovo linux-x86_64/64
+                      | gcc v10.5.0
+----------------------+---------------------------------------------------------
+ Translator location  | /usr/local/bupc_translator/targ
+----------------------+---------------------------------------------------------
+ networks supported   | smp udp mpi ibv
+----------------------+---------------------------------------------------------
+ default network      | smp
+----------------------+---------------------------------------------------------
+ pthreads support     | available (if used, default is 2 pthreads per process)
+----------------------+---------------------------------------------------------
+ Configured with      | '--with-translator=http://upc-translator.lbl.gov/upcc-2
+                      | 022.10.0.cgi'
+                      | '--prefix=/usr/local/berkeley_upc/opt/opt'
+                      | '--with-multiconf-magic=opt'
+----------------------+---------------------------------------------------------
+ Configure features   | trans_bupc,pragma_upc_code,driver_upcc,runtime_upcr,
+                      | gasnet,upc_collective,upc_io,upc_memcpy_async,
+                      | upc_memcpy_vis,upc_ptradd,upc_thread_distance,upc_tick,
+                      | upc_sem,upc_dump_shared,upc_trace_printf,
+                      | upc_trace_mask,upc_local_to_shared,upc_all_free,
+                      | upc_atomics,pupc,upc_types,upc_castable,upc_nb,nodebug,
+                      | notrace,nostats,nodebugmalloc,nogasp,segment_fast,
+                      | os_linux,cpu_x86_64,cpu_64,cc_gnu,packedsptr,upc_io_64
+----------------------+---------------------------------------------------------
+ Configure id         | Lenovo Tue Sep  1 01:27:28 +01 2026 ubuntu-win
+----------------------+---------------------------------------------------------
+ Binary interface     | 64-bit x86_64-pc-linux-gnu
+----------------------+---------------------------------------------------------
+ Runtime interface #  | Runtime supports 3.0 -> 3.14: Translator uses 3.6
+----------------------+---------------------------------------------------------
+                      |  --- BACKEND SETTINGS (for smp network) ---
+----------------------+---------------------------------------------------------
+ C compiler           | /usr/bin/gcc-10
+                      |   GNU/10.5.0/10.5.0
+                      |   gcc-10 (Ubuntu 10.5.0-4ubuntu2.1) 10.5.0 Copyright
+                      |   (C) 2020 Free Software Foundation, Inc.
+----------------------+---------------------------------------------------------
+ C compiler flags     | -O3 --param max-inline-insns-single=35000 --param
+                      | inline-unit-growth=10000 --param
+                      | large-function-growth=200000 -Wno-unused
+                      | -Wunused-result -Wno-unused-parameter -Wno-address
+----------------------+---------------------------------------------------------
+ linker               | /usr/bin/gcc-10
+                      |   GNU/10.5.0/10.5.0
+                      |   gcc-10 (Ubuntu 10.5.0-4ubuntu2.1) 10.5.0 Copyright
+                      |   (C) 2020 Free Software Foundation, Inc.
+----------------------+---------------------------------------------------------
+ linker flags         | -O3 --param max-inline-insns-single=35000 --param
+                      | inline-unit-growth=10000 --param
+                      | large-function-growth=200000 -Wno-unused
+                      | -Wunused-result -Wno-unused-parameter -Wno-address
+                      | -L/usr/local/berkeley_upc/opt/opt/lib -lupcr-smp-seq
+                      | -lumalloc -L/usr/local/berkeley_upc/opt/opt/lib
+                      | -lgasnet-smp-seq -L/usr/lib/gcc/x86_64-linux-gnu/10
+                      | -lgcc -lm
+----------------------+---------------------------------------------------------
